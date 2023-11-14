@@ -1,0 +1,210 @@
+
+[
+    
+    
+  {
+    "nombre": "LT 17 Radio Provincia",
+    "grupo": "Medios Públicos",
+    "año_creacion": 1964,
+    "latitud": -27.368296494605904,
+    "longitud":-55.89778191982508,
+    "propietario": "Multimedios Sapem"
+  },
+  {
+    "nombre": "Canal 12",
+    "grupo": "Medios Públicos",
+    "año_creacion": 1964,
+    "latitud": -27.367134,
+    "longitud": -55.899940,
+    "propietario": "Multimedios Sapem"
+  },
+  {
+      "nombre": "El Territorio",
+      "grupo": "Multimedios Sapem",
+      "año_creacion": 1925,
+      "latitud": -27.365843,
+      "longitud": -55.903460,
+      "propietario": "Sociedad Anónima, Industrial, Comercial y Financiera (SAICyF)",
+      "sitio_web": "elterritorio.com.ar"
+    },
+    {
+      "nombre": "Primera Edición",
+      "grupo": "Primera Edición",
+      "año_creacion": 1991,
+      "latitud": -27.358531,
+      "longitud": -55.909212,
+      "propietario": "Familia Wipplinger",
+      "sitio_web": "primeraedición.com.ar"
+    },
+    {
+      "nombre": "Misiones Online",
+      "grupo": "Misiones Online",
+      "año_creacion": 2000,
+      "latitud": -27.356259,
+      "longitud": -55.900791,
+      "propietario": "Misiones Online",
+      "sitio_web": "misionesonline.net"
+    },
+    {
+      "nombre": "Fm Show",
+      "grupo": "Medios Públicos",
+      "año_creacion": 1964,
+      "latitud": -27.368296494605904,
+      "longitud": -55.897771190988955,
+      "propietario": "Multimedios Sapem"
+    },
+    {
+      "nombre": "FM Republica",
+      "grupo": "Medios Públicos",
+      "año_creacion": 1964,
+      "latitud": -27.367134,
+      "longitud": -55.899940,
+      "propietario": "Multimedios Sapem"
+    },
+    {
+        "nombre": "Canal 2",
+        "grupo": "Noticia de la calle",
+        "año_creacion": 2007,
+        "latitud": -27.365843,
+        "longitud": -55.903460,
+        "propietario": "Sociedad Anónima, Industrial, Comercial y Financiera (SAICyF)",
+        "sitio_web": "elterritorio.com.ar"
+      },
+      {
+        "nombre": "Canal 6",
+        "grupo": "Radio Misiones",
+        "año_creacion": 2005,
+        "latitud": -27.358531,
+        "longitud": -55.909212,
+        "propietario": "Familia Wipplinger",
+        "sitio_web": "primeraedición.com.ar"
+      },
+      {
+        "nombre": "Canal 4 Posadas ",
+        "grupo": "Canal 4 de Posadas",
+        "año_creacion": 2005,
+        "latitud": -27.356259,
+        "longitud": -55.900791,
+        "propietario": "Carlos Valenzuela"
+        
+      },
+ 
+      {
+          "nombre": "Economis.com.ar,FM Open 101,7",
+          "grupo": "Economis",
+          "año_creacion": 1964,
+          "latitud": -27.368296494605904,
+          "longitud": -55.897771190988955,
+          "propietario": "Juan Carlos Argiuello"
+          
+        },
+        {
+          "nombre": "Somos Miones Tv",
+          "grupo": "Flow",
+          
+          "latitud": -27.367134,
+          "longitud": -55.899940,
+          "propietario": "telecom"
+        },
+        {
+            "nombre": "Revista Enfoque Misiones",
+            "grupo": "Enfoque Misiones",
+            "año_creacion": 2014,
+            "latitud": -27.365843,
+            "longitud": -55.903460,
+            "propietario": "Rodrigo Castillo",
+            "sitio_web": "enfoquemisiones.com.ar"
+          },
+          {
+            "nombre": "Aldiome Youtube",
+            "grupo": "Aldiome",
+            "año_creacion":2019,
+            "latitud": -27.358531,
+            "longitud": -55.909212,
+            "propietario": "Guido Encina"
+            
+          },
+          {
+            "nombre": "Revista Codigos ",
+            "grupo": "codigos",
+            "año_creacion": 2014,
+            "latitud": -27.356259,
+            "longitud": -55.900791,
+            "propietario": "sebastian Balanda",
+            "sitio_web": "revistacodigos.com"
+          },
+              {
+                  "nombre": "Misionero.com.ar",
+                  "grupo": "El Misionero",
+                  "latitud": -27.368296494605904,
+                  "longitud": -55.897771190988955,
+                  "propietario": ""
+                },
+                {
+                  "nombre": "diariodelaciudad.com.ar",
+                  "grupo": "Medios Públicos",
+                  "año_creacion": 2022,
+                  "latitud": -27.367134,
+                  "longitud": -55.899940,
+                  "propietario": "Fernando Romero"
+                },
+                {
+                    "nombre": "periodismomsionero.com",
+                    "grupo": "Multimedios Sapem",
+                    "año_creacion": 2022,
+                    "latitud": -27.365843,
+                    "longitud": -55.903460,
+                    "propietario": "Mario Pergotti",
+                    "sitio_web": "periodismomisionero.com.ar"
+                  },
+                  {
+                    "nombre": "TV Canal 21",
+                    "grupo": "Primera Edición",
+                    "año_creacion": 1991,
+                    "latitud": -27.358531,
+                    "longitud": -55.909212,
+                    "propietario": "Marite Bebie",
+                    "sitio_web": "canal21tv.com.ar"
+                  },
+                  {
+                    "nombre": "FM Circus",
+                    "grupo": "FM Cricus",
+                    "año_creacion": 2014,
+                    "latitud": -27.356259,
+                    "longitud": -55.900791,
+                    "propietario": "Alejandro Paproski"
+                    },
+                    {
+                      "nombre": "Noticiadelacalle",
+                      "grupo": "Noticia de la calle",
+                      "año_creacion": 2001,
+                      "latitud": -27.356259,
+                      "longitud": -55.900791,
+                      "propietario": "Daniel Duarte"
+                      },
+
+                      {
+                          "nombre": "Lavozdemsiones",
+                          "grupo": "La Voz De Misiones",
+                          "año_creacion": 2014,
+                          "latitud": -27.356259,
+                          "longitud": -55.900791,
+                          "propietario": "Fernando Rumi"
+                          }, 
+
+                          {
+                              "nombre": "Radio Mas",
+                              "grupo": "Canal 35",
+                              "año_creacion": 2014,
+                              "latitud": -27.356259,
+                              "longitud": -55.900791,
+                              "propietario": "Alejandro Paproski"
+                              }
+                                      
+
+  ]
+
+    
+
+  
+  

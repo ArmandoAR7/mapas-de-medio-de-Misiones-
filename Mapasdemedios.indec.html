@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mapa de Medios en Posadas, Misiones</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <style>
+        /* Define un estilo y tamaño para el mapa */
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+        #search-container {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            #map {
+                height: 400px;
+            }
+            /* Estilo para elementos "resolucion" y "desktop" (ajusta esto según tus necesidades) */
+            .resolucion {
+                width: 99%;
+            }
+            .desktop {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="map"></div>
+
+    <script>
+        var medios = [
+            
+        {
+    nombre:"LT17,canal 12",
+    latitud:-27.368296494605904,
+    longitud:-55.89778191982508,
+    informacion: "LT 17 Radio Provincia, <br> Canal 12,FM Top 107.3, <br> creada en el año 1964 <br> propietario;Mulmetimedios Sapem",
+    propietario:"multimedios Sapem",
+    pagina_web:"https://canal12misiones.com/",
+    
+
+    },
+
+    {
+        nombre: "El territorio",
+        latitud: -27.397541183794534, 
+        longitud: -55.92930892914798,
+        informacion: "Radioactiva FM 100.7<br> año de creación:1925 <br> propietario: Sociedad Anonima, industrial, comercial y financiera <br> (SAICyF).",
+        pagina_web:"https://elterritorio.com.ar"
+    },
+
+    {
+    nombre:"Primera Edición",
+    latitud:-27.372271224252373,
+    longitud:-55.90225464730175,
+    informacion:"Primera Edición, <br> Año de creación 1991 <br> FM de las Misiones <br> propietario: Familia Wipplinger",
+    pagina_web:"https://primeraedicion.com.ar"
+    },
+
+    {
+        nombre: "Misiones online",
+        latitud: -27.37085514466168,
+        longitud: -55.88605880126825,
+        informacion: "A las 5 de la tar.net, Radio Libertad <br> MisionesOnline Tv <br> ArgentinaForestal.com.ar <br>ValorAmbiental<br>Contrimus.com.ar<br>AgroMisiones<br>TurismoMisiones.com.ar<br>ComprasMisiones.com.ar",
+        pagina_web:"https://misionesonline.net"
+   
+    },
+    {
+    nombre: "FM show",
+    latitud:-27.367271195967117,
+    longitud:-55.92042394730202,
+    informacion:"FM Show<br>Propietario:Agencia 1 SA:",
+    pagina_web:"https://elshowdelosimpactos.com"
+},
+
+    {
+        nombre: "FM la Republica",
+        latitud: -27.385906,
+        longitud: -55.896432,
+        informacion: "Radio La Republica,<br>Año de creación: 2001",
+        pagina_web:"https://republica99.com.ar"
+    },
+
+    {
+        nombre: "Canal 2",
+        latitud: -27.38387310383211, 
+        longitud: -55.89603009333487,
+        informacion: "Grupo: Multimendio La Verdad SRL,año de cración:2007 <br> propietario:La Verdad SRL",
+        pagina_web:"https://noticiasdelacalle.com.ar"
+    },
+
+    {
+        nombre: "Canal 6",
+        latitud: -27.366036026064574, 
+        longitud: -55.89126302031888,
+        informacion: "Grupo:Radio Misiones<br>Año de creación:2005<br>Propietario:Jorge Kurrle",
+        pagina_web:"https://noticiasdel6.com"
+    
+    },
+
+    {
+        nombre: "Canal 4 de posadas",
+        latitud: -27.358377601916775, 
+        longitud: -55.92032803195801,
+        informacion: "Grupo:Canal 4 de Posadas<br>año de Creación 1994 <br>Propietario: Carlos Valenzuela",
+        pagina_web:"https://canalcuatroposadas.org"
+    },
+
+    {
+        nombre: "Economis",
+        latitud: -27.369240369794902,
+        longitud: -55.89474510497425,
+        informacion: "Grupo:Economis<br>Medios Agrupados:economis.com.ar,FM Open 101.7 <br>año de creacion:2018",
+    pagina_web:"https://economis.com.ar"
+    },
+
+    {
+        nombre: "Somos Misiones TV",
+        latitud: -27.402999935939512,
+        longitud: -55.90806344519134,
+        informacion: "GRUPO:Flow<br>PROPIETARIO:Telecom",
+    
+    
+    },
+
+    {
+        nombre: "Revista Enfoque Misiones",
+        latitud: -27.376878,
+        longitud: -55.891549,
+        informacion: "GRUPO:Enfoque Misiones<br>Año de creación:2014<br> Medios Agrupados: Revista Enfoque Misiones<br>PROPIETARIO:Rodrigo Castillo",
+   pagina_web:"https://enfoquemisiones.com/Revistadigital"
+    },
+
+    {
+        nombre: "Aldiome Youtube",
+        latitud: -27.37499309952639,
+        longitud:  -55.89585468543053,
+        informacion: "GRUPO:Aldionme<br> Año de creación:2019<br>PROPIETARIO:Guido Encina",
+    pagina_web:"https://www.youtube.com/c/aldiomemisiones"
+    },
+
+
+    {
+        nombre: "Revista Codigo",
+        latitud: -27.367463584060815, 
+        longitud: -55.88869893381048,
+        informacion: "GRUPO:Codigos<br>Año de creación:2014<br>Medios Agrupados:2014<br>Revistas Codigos<br> PROPIETARIO:Sebastian Balada",
+    pagina_web:"https://revistacodigos.com"
+    },
+
+    {
+        nombre: "El Misionero",
+        latitud: -27.385906,
+        longitud: -55.896432,
+        informacion: "GRUPO:El misionero,MEDIOS AGRUPADOS:Misionero.com.ar",
+    pagina_web:"https://misionero.com.ar"
+    },
+
+    {
+        nombre: "Diario La Ciudad",
+        latitud: -27.385906,
+        longitud: -55.896432,
+        informacion: "GRUPO: El Diario De La Ciudad<br>Año de fundación:2022<br>PROPIETARIO:Fernando Romero",
+    pagina_web:"https://diariolaciudad.com.ar"
+    }, 
+
+    {
+        nombre: "Periodismo Misionero",
+        latitud: -27.385906,
+        longitud: -55.896432,
+        informacion: "Descripción del Medio 2",
+    pagina_web:"https://periodismomisionero.com.ar"
+    },
+
+    {
+        nombre: "TV Canal 21",
+        latitud: -27.382626895493875,
+        longitud: -55.932796333809726,
+        informacion: "GRUPO:TV Canal21<br>PROPIETARIO:Marite Bebie",
+        pagina_web:"https://canal21tv.com.ar"
+    },
+
+    {
+        nombre: "Fm Circus",
+        latitud: -27.385906,
+        longitud: -55.896432,
+        informacion: "GRUPO:Circus,Año de Creación:2014<br>Medios Agrupados:FM Circus<br>PROPIETARIO:Alejandro Paproki",
+        pagina_web:"https://gentecononda.com/"
+    },
+
+    {
+        nombre: "Noticia de La Calle",
+        latitud: -27.38390219747008, 
+        longitud: -55.89590216264574,
+        informacion: "Medios Agrupados:Canal 2<br>Radio Noticias<br>Diario Noticias de la Calle<br>Semanario La Calle,Notibingo<br> Propietario: Daniel Duarte.<br>Año de fundación:2001",
+        pagina_web:"https://www.noticiasdelacalle.com.ar/index.html"
+    },
+
+    {
+        nombre: "La voz de Misiones",
+        latitud: -27.36637422653015,
+        longitud:  -55.8987363896298,
+        informacion: "Propietario: Fernando Rumi",
+        pagina_web:"https://lavozdemisiones.com"
+    },
+
+    {
+        nombre: "RAdio Mas FM 92.9",
+        latitud: -27.36656694252365,
+        longitud: -55.887812262646605,
+        informacion: "TV.Canal35<br>propietaria: Mariela Sosa ",
+         pagina_web:"https://radiomasnoticias.com.ar"
+
+    },
+    {
+        nombre:"Plan B Misiones",
+        latitud:"",
+        longitud:"",
+        informacion:"Propietario:Martin Boerr",
+        pagina_web:"https://planbmisiones.com.ar",
+
+    },
+    {
+        nombre:"Comunicación Libre SRL",
+        latitud:-27.39171853550903,
+        longitud:-55.91375296102083,
+        informacion:"Medios Agrupados:Tv:Misiones Cuatro (Canal 8)<br>Radio: Radio Social Club (Apostoles)<br> Año de crecaión:2005<br> Propietario: Comunicación Libre SRl",
+        pagina_web:"https://misionescuatro.com/",
+    }
+
+        ];
+
+        var map = L.map('map').setView([-27.367081, -55.896077], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        maxZoom: 19,
+        }).addTo(map);
+
+
+
+medios.forEach(function (medio) {
+    L.marker([medio.latitud, medio.longitud]).addTo(map)
+        .bindPopup('<b>' + medio.nombre + '</b><br>' + medio.informacion +
+            '<br><a href="' + medio.pagina_web + '" target="_blank">Página web</a>');
+});
+
+
+
+
+    </script>
+</body>
+</html>
